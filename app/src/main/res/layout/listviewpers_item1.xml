@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgVwGas"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtVwDescGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/imgVwGas"
+            android:layout_toRightOf="@+id/imgVwGas"
+            android:text="Gaseosa Coca Cola" />
+
+        <ImageView
+            android:id="@+id/imgVwFlg"
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_toEndOf="@+id/txtVwDescGas"
+            android:layout_toRightOf="@+id/txtVwDescGas"
+            android:src="@drawable/flg" />
+
+        <ImageView
+            android:id="@+id/imgVwPlay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgVwFlg"
+            android:layout_toRightOf="@+id/imgVwFlg"
+            android:src="@drawable/ic_launcher" />
+
+
+    </RelativeLayout>
+</LinearLayout>
