@@ -3,4 +3,6 @@
     <string name="ventana1">Primer Activity !!!</string>
     <string name="ventana2">Segunda Activity :P !</string>
     <string name="ventana3">Tercera Activity :* !</string>
+    <string name="fragmA">Fragment A !!!</string>
+    <string name="fragmB">Fragment B !!!</string>
 </resources>

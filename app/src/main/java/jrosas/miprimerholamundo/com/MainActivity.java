@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button boton, boton2, btmScrollVw, btnLstVw, btnLstVwPers;
+    Button boton, boton2, btmScrollVw, btnLstVw, btnLstVwPers, btnMainFrag;
     EditText editText;
 
     @Override
@@ -32,32 +32,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnLstVwPers = findViewById(R.id.btnLstVwPers);
         btnLstVwPers.setOnClickListener(this);
+
+        btnMainFrag = findViewById(R.id.btnMainFragm);
+        btnMainFrag.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+        Intent intent;
+
         switch (v.getId()){
             case R.id.button:
-                Intent intent = new Intent(this, Ejm2Activity.class);
+                intent = new Intent(this, Ejm2Activity.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
-                Intent intent2 = new Intent(this, Ejm3Activity.class);
+                intent = new Intent(this, Ejm3Activity.class);
                 String dato = editText.getText().toString();
-                intent2.putExtra("param1", dato);
-                startActivity(intent2);
+                intent.putExtra("param1", dato);
+                startActivity(intent);
                 break;
             case R.id.btnScrollView:
-                Intent intent3 = new Intent(this, MainScrollActivity.class);
-                startActivity(intent3);
+                intent = new Intent(this, MainScrollActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btnListView:
-                Intent intent4 = new Intent(this, ListViewActivity.class);
-                startActivity(intent4);
+                intent = new Intent(this, ListViewActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btnLstVwPers:
-                Intent intent5 = new Intent(this, ListViewPersActivity.class);
-                startActivity(intent5);
+                intent = new Intent(this, ListViewPersActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnMainFragm:
+                intent = new Intent(this, MainFragmActivity.class);
+                startActivity(intent);
                 break;
         }
     }

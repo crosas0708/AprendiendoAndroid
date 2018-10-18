@@ -20,7 +20,8 @@
         <activity android:name=".Ejm3Activity" />
         <activity android:name=".MainScrollActivity" />
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".ListViewPersActivity"></activity>
+        <activity android:name=".ListViewPersActivity" />
+        <activity android:name=".MainFragmActivity"></activity>
     </application>
 
 </manifest>
