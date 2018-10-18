@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
+        <activity android:name=".Ejm2Activity" />
+        <activity android:name=".Ejm3Activity" />
         <activity android:name=".MainScrollActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".ListViewPersActivity"></activity>

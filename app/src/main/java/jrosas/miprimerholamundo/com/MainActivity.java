@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button:
-                Intent intent = new Intent(this, Main2Activity.class);
+                Intent intent = new Intent(this, Ejm2Activity.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
-                Intent intent2 = new Intent(this, Main3Activity.class);
+                Intent intent2 = new Intent(this, Ejm3Activity.class);
                 String dato = editText.getText().toString();
                 intent2.putExtra("param1", dato);
                 startActivity(intent2);
